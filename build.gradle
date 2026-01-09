@@ -16,6 +16,12 @@ dependencies {
     implementation 'io.quarkus:quarkus-jdbc-mysql'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-hibernate-orm'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    implementation 'org.projectlombok:lombok:0.11.0'
+    // https://mvnrepository.com/artifact/io.quarkus/quarkus-flyway
+    implementation 'io.quarkus:quarkus-flyway:3.30.6'
+    // Flyway MariaDB/MySQL specific dependencies
+    implementation("org.flywaydb:flyway-mysql")
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
 }
